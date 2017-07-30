@@ -1,0 +1,41 @@
+// Dota Abilities Override File
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	//=================================================================================================================
+	// Reinforce Eins: Use of Collection
+	//=================================================================================================================
+	"rubick_spell_steal"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+		"AbilityCooldown"				"20.0 18.0 16.0"
+		"AbilityManaCost"				"25 25 25"
+		"AbilityCastRange"				"1000 1000 1000"
+		"AbilityTextureName"   "reinforce_eins_use_of_collection"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"180.0 240.0 300.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"projectile_speed"			"900"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cast_range_scepter"			"1400"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cooldown_scepter"			"2"
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+"DOTAHeroes"
+{
+	//=================================================================================================================
+	// HERO: Abbadon
+	//=================================================================================================================
+	"npc_dota_hero_abaddon_remake"
+	{
+		"override_hero"				"npc_dota_hero_abaddon"
+		"Ability1"					"super_strength_lua"
+		"Ability2"					"abaddon_night_ball_lua"
+		"Ability3"					"mami_tomoe_ribbon_lua"
+	}
+
+	//=================================================================================================================
+	// Mami Tomoe
+	//=================================================================================================================
+	"hero_mami_tomoe"
+	{
+		"override_hero"				"npc_dota_hero_huskar"
+		"DisableWearables"				"1"
+		"Model" "models/mami/mami_reference.vmdl"
+		"ModelScale"		"2.6"
+		"Ability1"					"mami_tomoe_step_lua"
+		"Ability2"					"mami_tomoe_ribbon_lua"
+		"Ability3"					"mami_tomoe_tiro_volley_lua"
+		"Ability4"                  "mami_tomoe_tiro_finale_lua"
+		"AttackRange"               "650"
+	}
+	
+	//=================================================================================================================
+	// Nanoha Takamachi
+	//=================================================================================================================
+	"hero_nanoha_takamachi"
+	{
+		"override_hero"				"npc_dota_hero_crystal_maiden"
+		"DisableWearables"				"1"
+		"Ability1"					"nanoha_takamachi_test_lua"
+		"Ability2"					"crystal_maiden_crystal_nova"
+		"Ability3"					"crystal_maiden_frostbite"
+		"Ability4"					"crystal_maiden_freezing_field"
+	}
+	
+	//=================================================================================================================
+	// Fuka Reventon
+	//=================================================================================================================
+	"hero_fuka_reventon"
+	{
+		"override_hero"				"npc_dota_hero_dark_seer"
+		"DisableWearables"			"1"
+		"Ability1"					"fuka_reventon_strike_lua"
+		"Ability2"					"fuka_reventon_clean_magical_shield_lua"
+		"Ability3"					"fuka_reventon_lightning_protection_lua"
+		"Ability4"					"fuka_reventon_knuckle_lua"
+	}
+	
+	//=================================================================================================================
+	// Reinforce Eins
+	//=================================================================================================================
+	"hero_reinforce_eins"
+	{
+		"override_hero"				"npc_dota_hero_rubick"
+		"DisableWearables"			"1"
+		"Ability1"					"rubick_spell_steal"
+		"Ability7"					"reinforce_eins_diabolic_emission_lua"
+	}
+	
+	//=================================================================================================================
+	// Rinne Berlinetta
+	//=================================================================================================================
+	"hero_rinne_berlinetta"
+	{
+		"override_hero"				"npc_dota_hero_centaur"
+		"DisableWearables"			"1"
+	}
+	
+	//=================================================================================================================
+	// Syaoran Li
+	//=================================================================================================================
+	"hero_syaoran_li"
+	{
+		"override_hero"				"npc_dota_hero_centaur"
+		"DisableWearables"			"1"
+	}
+}

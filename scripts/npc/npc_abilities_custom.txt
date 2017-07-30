@@ -1,0 +1,409 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	//=================================================================================================================
+	// Abaddon: Super strength
+	//=================================================================================================================
+	"super_strength_lua"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"                    "super_strength_lua"
+		"AbilityTextureName"			"abaddon_super_strength"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"	
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10.0 12.0 14.0 16.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"20"
+	}
+	
+	//=================================================================================================================
+	// Abaddon: Night ball
+	//=================================================================================================================
+	"abaddon_night_ball_lua"
+	{
+		"BaseClass" "ability_lua"
+		"ScriptFile" "abaddon_night_ball_lua"
+		"AbilityTextureName" "abaddon_night_ball"
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		
+		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		
+		"AbilityCastPoint" "0.2"
+		"AbilityCastRange" "600"
+		
+		"AbilityCooldown" "10.0 9.0 8.0 7.0"
+		
+		"AbilityManaCost" "30 20 10 5"
+		
+		"AbilitySpecial" {
+			"01" { "var_type" "FIELD_INTEGER" "cast_range" "300 500 700 1000"}
+			"02" { "var_type" "FIELD_INTEGER" "stun_duration" "2 4 6 10"}
+			"03" { "var_type" "FIELD_INTEGER" "proj_speed" "200"}
+			"04" { "var_type" "FIELD_INTEGER" "damage" "200"}
+		}
+	}
+
+	//=================================================================================================================
+	// Mami Tomoe: Ribbon
+	//=================================================================================================================
+	"mami_tomoe_ribbon_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "mami_tomoe_ribbon_lua"
+		"AbilityTextureName"   "mami_tomoe_ribbon"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"   "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		// Casting
+		"AbilityCastPoint" "0.2"
+		"AbilityCastRange" "400"
+		"AbilityManaCost"    "150"
+
+		// Time
+		"AbilityCooldown"    "50.0 40.0 30.0 20.0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"15 19 23 25"
+			}
+			"02"
+			{
+				"var_type" "FIELD_INTEGER"
+				"max_dist" "2500 3000 3500 4000"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Mami Tomoe: Step
+	//=================================================================================================================
+	"mami_tomoe_step_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "mami_tomoe_step_lua"
+		"AbilityTextureName"   "mami_tomoe_step"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		// Casting
+		"AbilityCastPoint" "0.0"
+		"AbilityManaCost"    "50"
+
+		// Time
+		"AbilityCooldown"    "12.0 11.0 10.0 9.0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"0.25 0.3 0.35 0.4"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max_count"	"2 3 4 5"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"time"	"10 8 6 4"
+			}
+
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"speed_bonus"	"150 175 200 225"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Mami Tomoe: Tiro Volley
+	//=================================================================================================================
+	"mami_tomoe_tiro_volley_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "mami_tomoe_tiro_volley_lua"
+		"AbilityTextureName"   "mami_tomoe_tiro_volley"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"   "DOTA_UNIT_TARGET_HERO"
+
+		// Casting
+		"AbilityCastPoint" "1.0"
+		"AbilityManaCost"    "150 135 120 100"
+		"AbilityCastRange" "570"
+
+		// Time
+		"AbilityCooldown"    "45.0 40.0 35.0 30.0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"2"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed"	"400"
+			}			
+		}
+	}
+
+	//=================================================================================================================
+	// Mami Tomoe: Tiro Finale
+	//=================================================================================================================
+	"mami_tomoe_tiro_finale_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "mami_tomoe_tiro_finale_lua"
+		"AbilityTextureName"   "mami_tomoe_tiro_finale"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"       "3"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_POINT"
+
+		// Casting
+		"AbilityCastPoint" "0.0"
+		"AbilityManaCost"    "150 135 120"
+		"AbilityCastRange" "1500"
+		"AbilityChannelTime" "5.0"
+		"AbilityCastAnimation"  "ACT_DOTA_FLINCH"
+
+		// Damage
+		"AbilityUnitDamageType" "DAMAGE_TYPE_PHYSICAL"
+
+		// Time
+		"AbilityCooldown"    "45.0 40.0 35.0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"crit"	"4 5 6"
+			}			
+		}
+	}
+	
+	//=================================================================================================================
+	// Nanoha Takamachi: Test
+	//=================================================================================================================
+	"nanoha_takamachi_test_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "nanoha_takamachi_test_lua"
+		"AbilityTextureName"   "mami_tomoe_tiro_finale"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
+		// Casting
+		"AbilityCastPoint" "0.0"
+		"AbilityManaCost"    "10"
+
+		// Time
+		"AbilityCooldown"    "0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"crit"	"4 5 6"
+			}			
+		}
+	}
+	
+	//=================================================================================================================
+	// Fuka Reventon: Clean Magical Shield
+	//=================================================================================================================
+	"fuka_reventon_clean_magical_shield_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "fuka_reventon_clean_magical_shield_lua"
+		"AbilityTextureName"   "fuka_reventon_clean_magical_shield"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Casting
+		"AbilityCastPoint" "0.0"
+		"AbilityManaCost"    "0"
+
+		// Time
+		"AbilityCooldown"    "0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"mana_per_damage"	"1.7 1.6 1.45 1.25"
+			}			
+		}
+	}
+	
+	//=================================================================================================================
+	// Fuka Reventon: Lightning Protection
+	//=================================================================================================================
+	"fuka_reventon_lightning_protection_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "fuka_reventon_lightning_protection_lua"
+		"AbilityTextureName"   "fuka_reventon_lightning_protection"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		
+		// Casting
+		"AbilityChannelTime" "0.5 0.75 1 1.25"
+		"AbilityCastAnimation"  "ACT_DOTA_ATTACK2"
+		
+		// ================================================
+		// TODO: До таланта работает не в унисоне
+		"AbilityCastPoint" "0.3"
+		"AbilityManaCost"    "100"
+
+		// Time
+		"AbilityCooldown"    "15"
+	}
+	
+	//=================================================================================================================
+	// Fuka Reventon: Hegemon Sky-severing Knuckle
+	//=================================================================================================================
+	"fuka_reventon_knuckle_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "fuka_reventon_knuckle_lua"
+		"AbilityTextureName"   "fuka_reventon_knuckle"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"       "3"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Casting
+		"AbilityCastPoint" "0.0"
+		"AbilityManaCost"    "0"
+
+		// Time
+		"AbilityCooldown"    "0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"crit_modifier"	"2.5 4.0 5.0"
+			}			
+			
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"50"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Fuka Reventon: Like last strike
+	//=================================================================================================================
+	"fuka_reventon_strike_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "fuka_reventon_strike_lua"
+		"AbilityTextureName"   "fuka_reventon_strike"
+		"MaxLevel"       "4"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
+		// Casting
+		"AbilityCastPoint" "0.0"
+		"AbilityManaCost"    "0"
+
+		// Time
+		"AbilityCooldown"    "0"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mana_cost"	"20 17 15 12"
+			}
+			
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"20 35 50 65"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Reinforce Eins: Diabolic Emission
+	//=================================================================================================================
+	"reinforce_eins_diabolic_emission_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "reinforce_eins_diabolic_emission_lua"
+		"AbilityTextureName"   "reinforce_eins_diabolic_emission"
+		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"       "3"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		
+		"AbilityChannelTime"			"8.0"
+
+		// Casting
+		"AbilityCastPoint" "1"
+		"AbilityManaCost"    "300"
+
+		// Time
+		"AbilityCooldown"    "210 200 190 185"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"5"
+			}
+			
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius_increase"	"9"
+			}
+		}
+	}
+}
