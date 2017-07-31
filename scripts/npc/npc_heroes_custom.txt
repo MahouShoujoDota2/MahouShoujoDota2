@@ -49,7 +49,9 @@
 	{
 		"override_hero"				"npc_dota_hero_rubick"
 		"DisableWearables"			"1"
+		"AbilityLayout"				"6"
 		"Ability1"					"reinforce_eins_blutiger_dolch_lua"
+		"Ability2"					"reinforce_dream_of_the_book_of_darkness_2_lua"
 		"Ability3"					"reinforce_eins_diabolic_emission_lua"
 		"Ability4"					"rubick_spell_steal"
 		"Ability7"					"reinforce_dream_of_the_book_of_darkness_lua"

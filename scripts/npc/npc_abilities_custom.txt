@@ -438,6 +438,7 @@
 			}
 		}
 	}
+	
 	//=================================================================================================================
 	// Reinforce Eins: Dream of the Book of Darkness
 	//=================================================================================================================
@@ -449,10 +450,9 @@
 		"AbilityTextureName"   "reinforce_dream_of_the_book_of_darkness"
 		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
 		"MaxLevel"       "3"
-		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"   "DOTA_UNIT_TARGET_HERO"
-		"AbilityChannelTime"			"2.0"
 
 		// Casting
 		"AbilityCastPoint" "0"
@@ -469,5 +469,25 @@
 				"dream_time"	"40 50 60"
 			}
 		}
+	}
+	
+	//=================================================================================================================
+	// Reinforce Eins: Dream of the Book of Darkness Secret Ability
+	//=================================================================================================================
+	"reinforce_dream_of_the_book_of_darkness_2_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "reinforce_dream_of_the_book_of_darkness_2_lua"
+		"MaxLevel"       "1"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityChannelTime"			"2.0"
+
+		// Casting
+		"AbilityCastPoint" "0"
+		"AbilityManaCost"    "0"
+		"AbilityCastRange" "0"
+		// Time
+		"AbilityCooldown"    "0"
 	}
 }

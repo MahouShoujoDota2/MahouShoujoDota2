@@ -23,9 +23,10 @@ function reinforce_modifier_dream_of_the_book_of_darkness_lua:OnTakeDamage(param
 			local result_angle = attacker_angle - victim_angle;
 			result_angle = math.abs(result_angle);
 			
-			if result_angle <= 90 or result_angle >= -90 then
+			--Say(c, "Attacker angle: " .. result_angle, true);
+			
+			if result_angle <= 90 and result_angle >= -90 then
 				c:Heal(params.damage, nil) 
-				
 			end
 		end
 	end
