@@ -378,8 +378,6 @@
 		"BaseClass" "ability_lua"
 		"ScriptFile" "reinforce_eins_diabolic_emission_lua"
 		"AbilityTextureName"   "reinforce_eins_diabolic_emission"
-		"AbilityType"			"DOTA_ABILITY_TYPE_ULTIMATE"
-		"MaxLevel"       "3"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		
 		"AbilityChannelTime"			"8.0"
@@ -403,6 +401,40 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"radius_increase"	"9"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Reinforce Eins: Blutiger Dolch
+	//=================================================================================================================
+	"reinforce_eins_blutiger_dolch_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "reinforce_eins_blutiger_dolch_lua"
+		"AbilityTextureName"   "reinforce_eins_blutiger_dolch_lua"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		
+		"AbilityChannelTime"			"5.0"
+
+		// Casting
+		"AbilityCastPoint" "3"
+		"AbilityManaCost"    "200"
+
+		// Time
+		"AbilityCooldown"    "120 100 80 60"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"500 550 600 650"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"150 200 250 300"
 			}
 		}
 	}
