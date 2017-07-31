@@ -52,7 +52,7 @@
 		"Ability1"					"reinforce_eins_blutiger_dolch_lua"
 		"Ability3"					"reinforce_eins_diabolic_emission_lua"
 		"Ability4"					"rubick_spell_steal"
-		"Ability7"					""
+		"Ability7"					"reinforce_dream_of_the_book_of_darkness_lua"
 
 	}
 	
