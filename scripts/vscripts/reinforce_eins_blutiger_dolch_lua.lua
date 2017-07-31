@@ -15,3 +15,16 @@ function reinforce_eins_blutiger_dolch_lua:OnSpellStart()
 
 end
 
+function reinforce_eins_blutiger_dolch_lua:OnChannelFinish()
+	--local fRadius = self:GetSpecialValueFor("radius");
+	local caster = self:GetCaster();
+	print(1)
+	local enemies = FindUnitsInRadius(caster:GetTeamNumber(), caster:GetAbsOrigin(), nil, FIND_UNITS_EVERYWHERE, DOTA_UNIT_TARGET_TEAM_ENEMY,
+                              DOTA_UNIT_TARGET_HERO, DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false);
+
+	for _,unit in pairs(enemies) do
+		local modifier =  unit:FindModifierByName("reinforce_eins_modifier_blutiger_dolch_lua")
+		if modifier ~= nil then modifier:Destroy() end
+	end
+
+end

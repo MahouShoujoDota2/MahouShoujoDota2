@@ -412,7 +412,7 @@
 		// General
 		"BaseClass" "ability_lua"
 		"ScriptFile" "reinforce_eins_blutiger_dolch_lua"
-		"AbilityTextureName"   "reinforce_eins_blutiger_dolch_lua"
+		"AbilityTextureName"   "reinforce_eins_blutiger_dolch"
 		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		
 		"AbilityChannelTime"			"5.0"
