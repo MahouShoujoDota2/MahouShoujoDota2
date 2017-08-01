@@ -1,1 +1,0 @@
-abaddon_modifier_night_ball_lua = class({})

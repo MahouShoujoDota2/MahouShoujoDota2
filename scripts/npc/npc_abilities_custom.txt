@@ -2,61 +2,7 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
-
-	//=================================================================================================================
-	// Abaddon: Super strength
-	//=================================================================================================================
-	"super_strength_lua"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"             		"ability_lua"
-		"ScriptFile"                    "super_strength_lua"
-		"AbilityTextureName"			"abaddon_super_strength"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"	
-
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.0"
-
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"10.0 12.0 14.0 16.0"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"20"
-	}
 	
-	//=================================================================================================================
-	// Abaddon: Night ball
-	//=================================================================================================================
-	"abaddon_night_ball_lua"
-	{
-		"BaseClass" "ability_lua"
-		"ScriptFile" "abaddon_night_ball_lua"
-		"AbilityTextureName" "abaddon_night_ball"
-		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		
-		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
-		
-		"AbilityCastPoint" "0.2"
-		"AbilityCastRange" "600"
-		
-		"AbilityCooldown" "10.0 9.0 8.0 7.0"
-		
-		"AbilityManaCost" "30 20 10 5"
-		
-		"AbilitySpecial" {
-			"01" { "var_type" "FIELD_INTEGER" "cast_range" "300 500 700 1000"}
-			"02" { "var_type" "FIELD_INTEGER" "stun_duration" "2 4 6 10"}
-			"03" { "var_type" "FIELD_INTEGER" "proj_speed" "200"}
-			"04" { "var_type" "FIELD_INTEGER" "damage" "200"}
-		}
-	}
-
 	//=================================================================================================================
 	// Mami Tomoe: Ribbon
 	//=================================================================================================================
