@@ -416,7 +416,6 @@
 			}
 		}
 	}
-	
 	//=================================================================================================================
 	// Reinforce Eins: Dream of the Book of Darkness Secret Ability
 	//=================================================================================================================
@@ -435,5 +434,26 @@
 		"AbilityCastRange" "0"
 		// Time
 		"AbilityCooldown"    "0"
+	}
+	//=================================================================================================================
+	// Alph: Chain Bind
+	//=================================================================================================================
+	"alph_chain_bind_lua"
+	{
+		// General
+		"BaseClass" "ability_lua"
+		"ScriptFile" "alph_chain_bind_lua"
+		"MaxLevel"       "1"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"   "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityChannelTime"			"10.0"
+
+		// Casting
+		"AbilityCastPoint" "0"
+		"AbilityManaCost"    "200"
+		"AbilityCastRange" "1000"
+		// Time
+		"AbilityCooldown"    "60"
 	}
 }

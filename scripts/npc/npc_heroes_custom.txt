@@ -75,5 +75,15 @@
 		"override_hero"				"npc_dota_hero_centaur"
 		"DisableWearables"			"1"
 	}
+	//=================================================================================================================
+	// Alph
+	//=================================================================================================================
+	"hero_alph"
+	{
+		"override_hero"				"npc_dota_hero_vengefulspirit"
+		"DisableWearables"			"1"
+		"AbilityLayout"				"6"
+		"Ability1"					"alph_chain_bind_lua"
+	}
 
 }

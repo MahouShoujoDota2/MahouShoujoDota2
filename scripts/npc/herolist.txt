@@ -6,4 +6,5 @@
 	"npc_dota_hero_dark_seer" 		"1"
 	"npc_dota_hero_centaur" 		"1"
 	"npc_dota_hero_rubick"			"1"
+	"npc_dota_hero_vengefulspirit"		"1"
 }
