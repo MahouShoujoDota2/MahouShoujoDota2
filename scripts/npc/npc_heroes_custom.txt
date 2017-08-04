@@ -84,6 +84,7 @@
 		"DisableWearables"			"1"
 		"AbilityLayout"				"6"
 		"Ability1"					"alph_chain_bind_lua"
+		"Ability2"					"alph_ring_bind_lua"
 	}
 
 }
